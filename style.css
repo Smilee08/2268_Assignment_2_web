@@ -1,0 +1,16 @@
+
+/* 
+   
+    Author     : Smilee Lopes
+    Roll No.   : 2268 
+*/
+
+ body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0%;
+        background-size: 100% 100%;
+                
+}
