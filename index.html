@@ -19,7 +19,7 @@ Roll No:2268
         <style>
             form{
     
-                margin:20%;
+                margin:10%;
                 background-color: white;
                 padding:50px;
             }
@@ -130,17 +130,17 @@ Roll No:2268
             </form>
         </div>
          <script> 
-            const form=document.querySelector('form');
+            const form=document.querySelector(#form);
              
             
-            document.querySelector('form').addEventListener('submit',(e)=>{
+            form.addEventListener('submit',(e)=>{
                 e.preventDefault();
-                const fd=new FormData(document.querySelector('form'));
+                const fd=new FormData(form);
                 const obj=Object.fromEntries(fd);
-                
+              
                 
                 const json=JSON.stringify(obj);
-                localStorage.setItem('form',json);
+                localStorage.setItem(#form,json);
                 
              
                 window.localStorage.href="main.html";
