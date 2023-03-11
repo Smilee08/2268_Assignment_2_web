@@ -130,7 +130,7 @@ Roll No:2268
             </form>
         </div>
          <script> 
-            const form=document.querySelector(#form);
+            const form=document.querySelector('#form');
              
             
             form.addEventListener('submit',(e)=>{
@@ -140,13 +140,12 @@ Roll No:2268
               
                 
                 const json=JSON.stringify(obj);
-                localStorage.setItem(#form,json);
+                window.localStorage.setItem('#form',json);
                 
              
-                window.localStorage.href="main.html";
+                window.location.href='main.html';
             });
-          
-
+    
         </script>
     </body>
 </html>

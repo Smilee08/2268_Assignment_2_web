@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="HTML,CSS,JS,Bootstrap" > <!-- keywords for search engine -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="Form"> <!-- description of web page -->
         <meta name="author" content="Smilee Lopes"> <!-- author of a page -->
         <link rel="icon" type="image/x-icon" href="logo.png"> <!-- icon -->
@@ -17,27 +18,33 @@
         <style>
             body{
                 background-color: white;
-                color: white;
+                color: black;
+                text-align:left;
+                margin:20px;
             }
         </style>
     </head>
     <body>
-         <div id="data">
+        <div class="H3"  style="text-align: center;font-family:Times New Roman,Times, serif; "><b>Response</b></div>
+         <div style="font-family:Times New Roman,Times, serif; padding: 20px; margin-left: 40%"id="data">
+             
             
         </div>
+        
 
          <script>
-            const json=localStorage.getItem('form');
+            const json=window.localStorage.getItem('#form');
             const obj=JSON.parse(json);
             
             for(key in obj){
                 const markup=`
-                        <div><span>${key}:${obj[key]}</span>
+                        <div><span>  ${key}  :  ${obj[key]} </span>
                         </div>`;
                         document.getElementById('data').innerHTML+=markup;
                 
             }
-        
+          
+        localStorage.removeItem('form');
         </script>
     </body>
 </html>
